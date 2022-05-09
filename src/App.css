@@ -1,38 +1,68 @@
+input{
+  padding: 15px 10px 10px 10px;
+  width: 250px;
+  height: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid rgb(203, 203, 203);
+  color:  rgb(112, 112, 112);
+  margin-bottom: 30px;
+}
+input:focus{
+  outline: none !important;
+  box-shadow: 0 0 10px #bababa;
+ 
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 50px;
+}
+.item{
+  border: 1px solid rgb(180, 180, 180);
+  width: 200px;
+  overflow-wrap: break-word;
+  
+}
+.item p {
+
+  overflow-wrap: break-word;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 393px) {
+  .display_grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px ;
+    gap: 3px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (min-width: 415px) {
+  .display_grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 3px;
+  }
+}
+@media only screen and (min-width: 660px) {
+  .display_grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 3px;
+  }
+}
+@media only screen and (min-width: 871px) {
+  .display_grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    gap: 3px;
   }
 }
